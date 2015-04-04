@@ -5,6 +5,7 @@ This project is for fun only send sms using nexmo api
 ### Running the app
 
 Init Node Modules First
+
     npm install
 
 Runs like a typical express app:
