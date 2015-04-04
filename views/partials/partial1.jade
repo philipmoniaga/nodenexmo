@@ -1,0 +1,25 @@
+p This is the partial for view 1.
+
+input(type="text", ng-model="query[queryBy]",ng-change="getData(comp, query)")
+
+select(ng-model="queryBy")
+	option(value="$")
+	option(value="name").
+		Name
+	option(value="tel").
+		Tel
+
+textarea(ng-model="textArea")
+
+button(type="submit" class="btn" ng-click="btnSend()").
+	Send
+hr
+div
+	table
+		tr
+			th FirstName.
+			th Telp
+		tr(ng-repeat="com in comp | filter:query" )
+			td {{com.name}}
+			td {{com.tel}}
+
